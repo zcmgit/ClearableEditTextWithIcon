@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="custom_edit">
+    <declare-styleable name="custom_edittext">
         <attr name="icon" format="reference"></attr>
     </declare-styleable>
 </resources>

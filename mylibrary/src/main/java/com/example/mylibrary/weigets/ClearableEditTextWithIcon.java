@@ -1,4 +1,4 @@
-package com.example.edittext.weigets;
+package com.example.mylibrary.weigets;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.example.edittext.R;
+import com.example.mylibrary.R;
 
 
 public class ClearableEditTextWithIcon extends AppCompatEditText implements TextWatcher, View.OnTouchListener,
@@ -33,17 +33,11 @@ public class ClearableEditTextWithIcon extends AppCompatEditText implements Text
         init(context,attrs);
     }
 
-//    private void init(){
-//        right = getResources().getDrawable(R.mipmap.clean_icon);
-//        addTextChangedListener(this);
-//        setOnFocusChangeListener(this);
-//        setOnTouchListener(this);
-//    }
     private void init(Context context,AttributeSet attrs){
-        TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.custom_edit);
-        right = typedArray.getDrawable(R.styleable.custom_edit_icon);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.custom_edittext);
+        right = typedArray.getDrawable(R.styleable.custom_edittext_icon);
         if(right == null){
-            right = getResources().getDrawable(R.mipmap.clean_icon);
+            right = getResources().getDrawable(R.drawable.clean_icon);
         }
         addTextChangedListener(this);
         setOnFocusChangeListener(this);
