@@ -1,7 +1,9 @@
 自定义带删除图标的Edittext
 
 引用:
+
 implementation 'com.github.zcmgit:ClearableEditTextWithIcon:v1.1'
+
 maven { url 'https://jitpack.io' }
 
 <com.example.edittext.weigets.ClearableEditTextWithIcon
